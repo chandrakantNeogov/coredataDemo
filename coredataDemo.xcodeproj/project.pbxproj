@@ -16,6 +16,13 @@
 		D88F34CF2C048768009EFCC8 /* coredataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34CE2C048768009EFCC8 /* coredataDemoTests.swift */; };
 		D88F34D92C048768009EFCC8 /* coredataDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34D82C048768009EFCC8 /* coredataDemoUITests.swift */; };
 		D88F34DB2C048768009EFCC8 /* coredataDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34DA2C048768009EFCC8 /* coredataDemoUITestsLaunchTests.swift */; };
+		D88F34F22C0489DC009EFCC8 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34F02C0489DC009EFCC8 /* Person+CoreDataClass.swift */; };
+		D88F34F32C0489DC009EFCC8 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34F12C0489DC009EFCC8 /* Person+CoreDataProperties.swift */; };
+		D88F34F92C0499D1009EFCC8 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34F82C0499D1009EFCC8 /* PersonViewModel.swift */; };
+		D88F34FC2C05C1D7009EFCC8 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34FB2C05C1D7009EFCC8 /* PersonRepository.swift */; };
+		D88F34FE2C05C213009EFCC8 /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F34FD2C05C213009EFCC8 /* UseCases.swift */; };
+		D88F35012C05C55C009EFCC8 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F35002C05C55C009EFCC8 /* AddPersonView.swift */; };
+		D88F35032C05C644009EFCC8 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F35022C05C644009EFCC8 /* PersonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		D88F34D42C048768009EFCC8 /* coredataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coredataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88F34D82C048768009EFCC8 /* coredataDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coredataDemoUITests.swift; sourceTree = "<group>"; };
 		D88F34DA2C048768009EFCC8 /* coredataDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coredataDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D88F34F02C0489DC009EFCC8 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataClass.swift"; path = "Model/Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D88F34F12C0489DC009EFCC8 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "Model/Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D88F34F82C0499D1009EFCC8 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		D88F34FB2C05C1D7009EFCC8 /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		D88F34FD2C05C213009EFCC8 /* UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
+		D88F35002C05C55C009EFCC8 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		D88F35022C05C644009EFCC8 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,8 @@
 		D88F34AC2C048766009EFCC8 = {
 			isa = PBXGroup;
 			children = (
+				D88F34F02C0489DC009EFCC8 /* Person+CoreDataClass.swift */,
+				D88F34F12C0489DC009EFCC8 /* Person+CoreDataProperties.swift */,
 				D88F34B72C048766009EFCC8 /* coredataDemo */,
 				D88F34CD2C048768009EFCC8 /* coredataDemoTests */,
 				D88F34D72C048768009EFCC8 /* coredataDemoUITests */,
@@ -98,8 +114,10 @@
 		D88F34B72C048766009EFCC8 /* coredataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D88F34FF2C05C54C009EFCC8 /* View */,
+				D88F34FA2C05C1BF009EFCC8 /* Data */,
+				D88F34F72C0499BD009EFCC8 /* ViewModel */,
 				D88F34B82C048766009EFCC8 /* coredataDemoApp.swift */,
-				D88F34BA2C048766009EFCC8 /* ContentView.swift */,
 				D88F34BC2C048767009EFCC8 /* Assets.xcassets */,
 				D88F34C12C048768009EFCC8 /* Persistence.swift */,
 				D88F34C32C048768009EFCC8 /* coredataDemo.xcdatamodeld */,
@@ -131,6 +149,33 @@
 				D88F34DA2C048768009EFCC8 /* coredataDemoUITestsLaunchTests.swift */,
 			);
 			path = coredataDemoUITests;
+			sourceTree = "<group>";
+		};
+		D88F34F72C0499BD009EFCC8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D88F34F82C0499D1009EFCC8 /* PersonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D88F34FA2C05C1BF009EFCC8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D88F34FB2C05C1D7009EFCC8 /* PersonRepository.swift */,
+				D88F34FD2C05C213009EFCC8 /* UseCases.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D88F34FF2C05C54C009EFCC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D88F34BA2C048766009EFCC8 /* ContentView.swift */,
+				D88F35002C05C55C009EFCC8 /* AddPersonView.swift */,
+				D88F35022C05C644009EFCC8 /* PersonDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88F34FC2C05C1D7009EFCC8 /* PersonRepository.swift in Sources */,
 				D88F34C22C048768009EFCC8 /* Persistence.swift in Sources */,
 				D88F34C52C048768009EFCC8 /* coredataDemo.xcdatamodeld in Sources */,
+				D88F34F22C0489DC009EFCC8 /* Person+CoreDataClass.swift in Sources */,
+				D88F34FE2C05C213009EFCC8 /* UseCases.swift in Sources */,
+				D88F34F32C0489DC009EFCC8 /* Person+CoreDataProperties.swift in Sources */,
 				D88F34BB2C048766009EFCC8 /* ContentView.swift in Sources */,
+				D88F35012C05C55C009EFCC8 /* AddPersonView.swift in Sources */,
 				D88F34B92C048766009EFCC8 /* coredataDemoApp.swift in Sources */,
+				D88F35032C05C644009EFCC8 /* PersonDetailView.swift in Sources */,
+				D88F34F92C0499D1009EFCC8 /* PersonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
